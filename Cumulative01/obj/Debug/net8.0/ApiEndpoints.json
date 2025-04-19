@@ -1,0 +1,303 @@
+[
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherPageController",
+    "Method": "New",
+    "RelativePath": "Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TeacherFname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TeacherLname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmployeeID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HireDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Salary",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherAPIController",
+    "Method": "addATeacher",
+    "RelativePath": "addATeacher",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teacher",
+        "Type": "Cumulative01.Models.Teacher",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherAPIController",
+    "Method": "FindByHireDate",
+    "RelativePath": "api/TeacherAPI/findbydate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Start",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "End",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Cumulative01.Models.Teacher, Cumulative01, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherAPIController",
+    "Method": "FindTeacher",
+    "RelativePath": "api/TeacherAPI/FindTeacher/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Cumulative01.Models.Teacher",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherAPIController",
+    "Method": "ListTeacherNames",
+    "RelativePath": "api/TeacherAPI/Teacher/{SearchKey}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SearchKey",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Cumulative01.Models.Teacher, Cumulative01, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherAPIController",
+    "Method": "DeleteATeacher",
+    "RelativePath": "DeleteATeacher/{ID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherPageController",
+    "Method": "Delete",
+    "RelativePath": "DeleteIsConfirmed/{ID}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherPageController",
+    "Method": "New",
+    "RelativePath": "New",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherPageController",
+    "Method": "DeleteConfirmResult",
+    "RelativePath": "TeacherPage/DeleteCon/{ID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherPageController",
+    "Method": "UpdateTeacher",
+    "RelativePath": "TeacherPage/UpdateTeacher/{ID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherPageController",
+    "Method": "UpdateTeacherAPIRoute",
+    "RelativePath": "TeacherPage/UpdateTeacherAPIRoute/{ID}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "TeacherFname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TeacherLname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmployeeID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HireDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Salary",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Cumulative01.Controllers.TeacherAPIController",
+    "Method": "UpdateAPI",
+    "RelativePath": "UpdateTeacherAPI/{ID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "teacher",
+        "Type": "Cumulative01.Models.Teacher",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

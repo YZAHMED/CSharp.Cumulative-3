@@ -1,0 +1,11 @@
+﻿@model Cumulative01.Models.Teacher;
+
+<h1> Teacher ID: <em> @Model.TeacherId </em> </h1>
+<a href="/TeacherPage/DeleteCon/@Model.TeacherId" style="color: red">Delete This Teacher</a>
+<p> Teacher First Name: <em> @Model.TeacherFirstName </em></p>
+<p>	Teacher Last Name: <em> @Model.TeacherLastName </em></p>
+<p>	Teacher Employee ID: <em> @Model.EmployeeID </em></p>
+<p>	Hired Since: <em> @Model.HireDate </em></p>
+<p>	Salary Package:<em> @Model.Salary </em></p>
+
+<a href="/TeacherPage/UpdateTeacher/@Model.TeacherId">Update the information of this teacher</a>

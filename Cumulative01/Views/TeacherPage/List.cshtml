@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Cumulative01.Models.Teacher>
+
+<h1> This is Yaqoob First View </h1>
+<p> There are around @Model.Count() Teachers in the School</p>
+
+<a href="/new" style="margin-bottom:20px;display:block;">Add a Teacher into the Database</a>
+
+
+
+<form action="/TeacherPage/List" method="GET">
+    <input type="text" name="SearchKey">
+    <input type="submit" value="search">
+	
+
+
+</form>
+    <hr />
+@foreach (Teacher teacher in Model)
+{
+	<div><a href="/TeacherPage/Show/@teacher.TeacherId"> @teacher.TeacherFirstName @teacher.TeacherLastName </a></div>
+	<hr />
+}

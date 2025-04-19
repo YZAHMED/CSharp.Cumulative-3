@@ -1,0 +1,29 @@
+﻿@model Cumulative01.Models.Teacher 
+
+<form method="POST" action="/TeacherPage/UpdateTeacherAPIRoute/@Model.TeacherId">
+    <div>
+        <label for="TeacherFname">Teacher First Name:</label>
+        <input type="text" name="TeacherFname" value="@Model.TeacherFirstName">
+    </div>
+  
+
+    <div>
+        <label for="TeacherLname">Teacher Last Name:</label>
+        <input type="text" name="TeacherLname" value="@Model.TeacherLastName">
+    </div>
+    <div>
+        <label for="EmployeeID">Employee ID:</label>
+        <input type="text" name="EmployeeID" value="@Model.EmployeeID">
+    </div>
+
+    <div>
+        <label for="HireDate">Hire Date</label>
+        <input type="datetime" name="HireDate" value="@Model.HireDate">
+    </div>
+    <div>
+        <label for="Salary">Salary</label>
+        <input type="text" name="Salary" value="@Model.Salary">
+    </div>
+    <input type="submit" value="Update the information" />
+
+</form>
